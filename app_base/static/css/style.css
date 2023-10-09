@@ -1,3 +1,10 @@
+.custom-navbar-brand {
+    color: #FFDA22; /* Altere para a cor desejada */
+    font-size: 24px; /* Altere o tamanho da fonte conforme necessário */
+    font-weight: bold; /* Defina o peso da fonte conforme necessário */
+    /* Outras propriedades de estilo aqui */
+}
+
 .main-footer{
     background-color: #9fd25f;
 }
@@ -5,3 +12,5 @@
 .rights{
     background-color: #82b641;
 }
+
+
