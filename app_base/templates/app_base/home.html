@@ -1,1 +1,109 @@
 {% extends 'app_base/base.html' %}
+{% load static %}
+{% block title %}Python Pro - home{% endblock title%}
+{% block body %}
+
+<div class="container-fluid">
+    <div class="row align-items-start">
+        <div class="col ms-5 mt-5 mb-5">
+            <p class="text-start fs-4 font-monospace mb-4 fw-semibold text-warning">
+                Olá!
+            </p>
+
+            <p class="text-start fs-2 font-monospace m-0 fw-semibold">
+                Eu sou o Luciano Ramalho
+            </p>
+
+            <p class="text-start fs-6 font-monospace lh-3 fw-medium">
+                Sócio e professor na <a href="https://www.python.pro.br">Python Pro</a> e autor do Livro
+                Python Fluente.
+            </p>
+
+            <p class="text-start">
+                <i class="fa-brands fa-twitter m-2"></i>
+                <a href="#"></a>
+
+                <i class="fa-brands fa-instagram m-2"></i>
+                <a href="#"></a>
+
+                 <i class="fa-brands fa-facebook m-2"></i>
+                 <a href="#"></a>
+
+                 <i class="fa-brands fa-linkedin m-2"></i>
+                 <a href="#"></a>
+           </p>
+
+        </div>
+
+		<div class="col mt-5">
+
+			<div class="card-body">
+				<p class="card-text">
+					<img src="{% static 'img/python.jpg' %}" alt="Foto um cartão com o nome python"
+						 class="img-thumbnail float-md-start m-0"/>
+			</div>
+		</div>
+	</div>
+
+<!--JUMBOTRON-->
+<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="jumbotron p-3 mb-2 mt-2 text-dark" style="background-color:#C0D6DF">
+
+
+					<h2>
+						Curso de Python
+					</h2>
+					<p>
+						Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod
+						magna. Aenean aliquam molestie leo, vitae iaculis nisl. Nullam volutpat risus nec leo commodo,
+						ut
+						interdum diam laoreet. Sed non consequat odio. Admodum accumsan disputationi eu sit. Vide
+						electram
+						sadipscing et per.
+						<a href="https://www.amazon.com/_/dp/1491946008?tag=oreilly20-20" target="_blank">Python
+							Fluente</a>
+					</p>
+
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card">
+
+							<h5 class="card-header">
+								Mais detalhes sobre o instrutor
+							</h5>
+
+							<div class="card-body">
+								<p class="card-text">
+									<img src="{% static 'img/luciano-ramalho.png' %}" alt="Foto de Luciano Ramalho"
+										 class="img-thumbnail float-md-start me-3"/>
+
+
+									Foi diretor técnico do Brasil Online, primeiro portal da Abril S/A na Web.
+									Liderou times para os portais IDG Now, BOL, UOL, AOL
+									Brasil e outros, usando Python
+									desde 1998.
+									Como instrutor, atendeu clientes como Citibank, CPqD, Serpro, Presidência da
+									República,
+									Globo.com e Itaú.
+									Palestrante em eventos internacionais como FISL, PyCon US e OSCON. Ajudou a criar a
+									Associação Python Brasil e foi seu presidente.
+									É membro da Python Software Foundation e fundador do Garoa Hacker Clube, o primeiro
+									hackerspace do Brasil.
+
+								</p>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock body %}
