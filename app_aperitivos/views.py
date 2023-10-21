@@ -1,12 +1,23 @@
 from django.shortcuts import render
+from django.urls import reverse
+
+
+class Video:
+    def __init__(self, slug, titulo, vimeo_id):
+        self.slug = slug
+        self.titulo = titulo
+        self.vimeo_id = vimeo_id
+
+    def get_absolute_url(self):
+        return reverse('app_aperitivos:video', args=(self.slug,))
+
 
 videos = [
-    {'slug': 'motivacao', 'titulo': 'Vídeo Aperitivo: Motivação', 'vimeo_id': 737734204},
-    # se eu controlo os títulos e os ids respectivos, eu pdoerei usar o template para qualquer vídeo.
-    {'slug': 'instalacao-windows', 'titulo': 'Instalação Windows', 'vimeo_id': 251497668},
+    Video('motivacao', 'Vídeo Aperitivo: Motivação',  737734204),
+    Video('instalacao-windows', 'Instalação Windows',  251497668),
 ]
 
-videos_dct = {dct['slug']: dct for dct in videos}
+videos_dct = {v.slug: v for v in videos}
 
 def indice(request):
     return render(request, 'app_aperitivos/indice.html', context={'videos': videos})

@@ -63,35 +63,7 @@
 
 {% block body %} {% endblock body%}
 
-
-<!--FOOTER-->
-<footer class="main-footer mt-5 pt-3 text-light">
-
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<h3>Entre em Contato</h3>
-				<address>
-					+55 11 977-411-589
-					<br/>
-					<a href="mailto:marqueane@hotmail.com" class="text-light">marqueane@hotmail.com</a>
-				</address>
-			</div>
-		</div>
-	</div>
-
-	<div class="rights pb-4">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					{% now "Y" %} Python Pro. Todos os direitos reservados.
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-</footer>
+{% include 'app_base/footer.html' with contato_email='marqueane@hotmail.com' only %}
 
 
   </body>
