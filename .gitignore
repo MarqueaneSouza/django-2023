@@ -1,0 +1,6 @@
+#Enviroments
+venv
+.env
+
+#postgres files for local developemnt
+.pgdata
